@@ -15,11 +15,11 @@ const Footer = () => {
         <div className="footer-section">
           <h4>Contact Us</h4>
           <div className="footer-contact">
-            <a href="tel:+919876543210" className="footer-link">
-              <FiPhone /> +91 98765 43210
+            <a href="tel:+919860220261" className="footer-link">
+              <FiPhone /> +91 9860220261
             </a>
             <a
-              href="https://wa.me/919876543210"
+              href="https://wa.me/9860220261"
               target="_blank"
               rel="noopener noreferrer"
               className="footer-link"
@@ -27,7 +27,7 @@ const Footer = () => {
               <FaWhatsapp /> WhatsApp
             </a>
             <a
-              href="https://instagram.com/gharguti"
+              href="https://instagram.com/shree_ghargutibiscuit"
               target="_blank"
               rel="noopener noreferrer"
               className="footer-link"
@@ -42,8 +42,8 @@ const Footer = () => {
           <div className="footer-address">
             <FiMapPin />
             <p>
-              123 Main Street,<br />
-              City, State - 123456<br />
+              MALE FATA SANGLI KOLHAPUR HIGHWAY HERLE <br />
+              416005<br />
               India
             </p>
           </div>

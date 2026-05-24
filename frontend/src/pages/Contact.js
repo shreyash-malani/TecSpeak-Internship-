@@ -55,7 +55,7 @@ const Contact = () => {
                 <div>
                   <h3>WhatsApp</h3>
                   <a
-                    href="https://wa.me/919860220261"
+                    href="https://wa.me/9860220261"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -69,8 +69,8 @@ const Contact = () => {
                 <div>
                   <h3>Address</h3>
                   <p>
-                    sangli kolhapur highway near male fata,herle Maharastra<br />
-                     416115<br />
+                    MALE FATA SANGLI KOLHAPUR HIGHWAY HERLE <br />
+                     416005<br />
                     India
                   </p>
                 </div>
