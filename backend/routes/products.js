@@ -128,6 +128,26 @@ router.delete('/:id', auth, async (req, res) => {
   }
 });
 
+// Get products by name 
+router.get('/search/:name', async (req, res) => {
+  try {
+    const productName = req.params.name;
+
+    const products = await Product.find({
+      name: { $regex: productName, $options: 'i' }
+    });
+
+    if (products.length === 0) {
+      return res.status(404).json({ message: 'No products found' });
+    }
+
+    res.json(products);
+  } catch (error) {
+    console.error('Search product error:', error);
+    res.status(500).json({ message: 'Server error' });
+  }
+});
+
 module.exports = router;
 
 

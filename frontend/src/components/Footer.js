@@ -11,7 +11,6 @@ const Footer = () => {
           <h3>Shree Gharguti</h3>
           <p className="footer-tagline">Pure Homemade Taste, Every Day</p>
         </div>
-
         <div className="footer-section">
           <h4>Contact Us</h4>
           <div className="footer-contact">
@@ -36,19 +35,17 @@ const Footer = () => {
             </a>
           </div>
         </div>
-
         <div className="footer-section">
           <h4>Address</h4>
           <div className="footer-address">
             <FiMapPin />
             <p>
               MALE FATA SANGLI KOLHAPUR HIGHWAY HERLE <br />
-              416005<br />
+              416005 <br />
               India
             </p>
           </div>
         </div>
-
         <div className="footer-section">
           <h4>Quick Links</h4>
           <div className="footer-links">
