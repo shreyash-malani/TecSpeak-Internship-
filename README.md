@@ -238,4 +238,205 @@ For any issues or questions, please contact the development team.
 **Made with ❤️ for Shree Gharguti Biscuit & Nasta Centre**
 
 
+Experiment 5: Implementation of Docker Commands – Complete Summary 
+This is a good viva revision sheet for you. 
+
+1. What is Docker? 
+Docker is a containerization platform used to create, run, and manage containers. 
+Why Docker? 
+• Consistent environment  
+• Easy deployment  
+• Lightweight  
+• Supports DevOps and CI/CD
+
+3. Installation of Docker 
+Download Docker Desktop 
+Install Docker Desktop and start it. 
+Verify Installation 
+docker --version 
+Output: 
+Docker version 29.5.2 
+This confirms Docker is installed.
+
+5. Verify Docker is Working 
+Run: 
+docker run hello-world 
+Docker: 
+1. Downloads hello-world image  
+2. Creates container  
+3. Runs container  
+4. Displays message  
+5. Stops container  
+Output: 
+Hello from Docker! 
+This confirms Docker daemon is working.
+
+4. What is an Image? 
+An Image is a template used to create containers. 
+Real-Life Example 
+House Blueprint = Image 
+Built House = Container 
+Image contains: 
+• Operating System  
+• Libraries  
+• Dependencies  
+• Application Code
+
+6. Download an Image 
+We downloaded Ubuntu image. 
+docker pull ubuntu 
+Docker downloaded Ubuntu from Docker Hub.
+
+8. View Images 
+docker images 
+Output: 
+hello-world 
+ubuntu 
+These are images stored on your PC.
+
+10. What is a Container? 
+A Container is a running instance of an image. 
+Flow 
+Image 
+↓ 
+Container 
+↓ 
+Running Application
+
+11. Create a Container 
+Command: 
+docker run --name mycontainer -it ubuntu bash 
+Meaning: 
+Option 
+docker run 
+Meaning 
+Create and run container 
+Option 
+Meaning --name mycontainer Name of container -it 
+ubuntu 
+bash 
+Interactive terminal 
+Image name 
+Open Linux shell
+
+13. Enter Ubuntu Container 
+After running: 
+docker run --name mycontainer -it ubuntu bash 
+Prompt changes to: 
+root@xxxx:/# 
+Meaning: 
+You are inside Ubuntu Linux 
+even though host OS is Windows.
+
+15. Check Ubuntu Version 
+Inside container: 
+cat /etc/os-release 
+Displays Ubuntu details. 
+16. Exit Container 
+exit 
+Container stops. 
+Status becomes: 
+Exited (0)
+
+18. View Running Containers 
+docker ps 
+Shows only running containers. 
+Example: 
+CONTAINER ID 
+IMAGE 
+STATUS
+
+20. View All Containers 
+docker ps -a 
+Shows: 
+• Running containers  
+• Stopped containers  
+You saw: 
+mycontainer 
+hello-world
+
+22. Start a Stopped Container 
+docker start mycontainer 
+Container starts again.
+
+24. Stop a Running Container 
+docker stop mycontainer 
+Container stops.
+
+26. Remove a Container 
+docker rm mycontainer 
+Container gets deleted. 
+27. Remove an Image 
+docker rmi ubuntu 
+Deletes Ubuntu image. 
+28. Relationship Between Image and Container 
+Ubuntu Image 
+│ 
+├── Container 1 
+├── Container 2 
+└── Container 3 
+One image can create multiple containers. 
+Docker Commands Used 
+Command
+
+docker --version 
+docker run hello-world 
+Purpose 
+Check Docker version 
+Verify Docker 
+Command 
+Purpose 
+
+docker pull ubuntu 
+docker images 
+
+Download image 
+
+List images 
+docker run --name mycontainer -it ubuntu bash Create container 
+docker ps 
+docker ps -a 
+docker start mycontainer 
+docker stop mycontainer 
+docker rm mycontainer 
+docker rmi ubuntu 
+Show running containers 
+Show all containers 
+Start container 
+Stop container 
+Remove container 
+Remove image 
+Important Viva Questions 
+What is Docker? 
+Docker is a containerization platform used to create, run, and manage containers. 
+What is an Image? 
+A read-only template used to create containers. 
+What is a Container? 
+A running instance of a Docker image. 
+Difference Between Image and Container? 
+Image 
+Container 
+Template 
+Read-only 
+Running Instance 
+Executable 
+Creates Containers Created From Image 
+Command to View Images? 
+docker images 
+Command to View Running Containers? 
+docker ps 
+Command to View All Containers? 
+docker ps -a 
+Command to Stop Container? 
+docker stop mycontainer 
+Command to Start Container? 
+docker start mycontainer 
+One-Line Experiment Conclusion 
+Successfully installed Docker, pulled Ubuntu image, created and managed containers using 
+Docker commands, and understood the concepts of Images and Containers. 
+At this point, you have completed and understood Experiment 5: Implementation of 
+Docker Commands. The next experiment (Experiment 6) will use these concepts to create 
+your own Docker image and container using a Dockerfile.
+
+
 
